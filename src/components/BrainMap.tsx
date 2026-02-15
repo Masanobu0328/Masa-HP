@@ -25,7 +25,7 @@ const BrainMap: React.FC = () => {
             title: language === 'ja' ? 'AI・テクノロジー' : 'AI & Technology',
             description: language === 'ja' ? 'AI活用術、技術開発、姿勢推定' : 'AI Usage, Development, Posture Estimation',
             color: '#7C9082',
-            link: '/blog?category=AI・テクノロジー'
+            link: 'https://note.com/masa_aus_physio'
         },
         {
             id: 'physio',
@@ -33,7 +33,7 @@ const BrainMap: React.FC = () => {
             title: language === 'ja' ? '理学療法・健康' : 'Physio & Health',
             description: language === 'ja' ? '歩行解析、マッサージ、セラピスト教育' : 'Gait Analysis, Massage, Therapist Education',
             color: '#9BA8A0',
-            link: '/blog?category=理学療法・健康'
+            link: 'https://note.com/masa_aus_physio'
         },
         {
             id: 'business',
@@ -41,7 +41,7 @@ const BrainMap: React.FC = () => {
             title: language === 'ja' ? 'ビジネス・起業' : 'Business',
             description: language === 'ja' ? 'マーケティング、コンサルティング、起業' : 'Marketing, Consulting, Entrepreneurship',
             color: '#5C6B61',
-            link: '/blog?category=ビジネス・起業'
+            link: 'https://note.com/masa_aus_physio'
         },
         {
             id: 'lifestyle',
@@ -49,7 +49,7 @@ const BrainMap: React.FC = () => {
             title: language === 'ja' ? 'マインドセット・生活' : 'Mindset & Life',
             description: language === 'ja' ? '海外生活、自然・アウトドア、マインドセット' : 'Overseas Life, Nature & Outdoor, Mindset',
             color: '#D1CEC7',
-            link: '/blog?category=マインドセット・生活'
+            link: 'https://note.com/masa_aus_physio'
         }
     ];
 
@@ -103,7 +103,11 @@ const BrainMap: React.FC = () => {
     };
 
     const handleCategoryClick = (link: string) => {
-        navigate(link);
+        if (link.startsWith('http')) {
+            window.open(link, '_blank');
+        } else {
+            navigate(link);
+        }
     };
 
     // Grid View

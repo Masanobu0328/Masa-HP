@@ -28,6 +28,7 @@ const COLORS = {
 
 export const getBrainMapData = (lang: 'ja' | 'en'): BrainData => {
     const isEn = lang === 'en';
+    const noteUrl = 'https://note.com/masa_aus_physio';
 
     return {
         nodes: [
@@ -42,30 +43,30 @@ export const getBrainMapData = (lang: 'ja' | 'en'): BrainData => {
             },
 
             // AI & Technology
-            { id: 'ai', name: isEn ? 'AI & Technology' : 'AI・テクノロジー', val: 18, color: COLORS.AI, group: 'ai', link: '/blog?category=AI・テクノロジー' },
-            { id: 'ai-dev', name: isEn ? 'Development' : '技術開発', val: 12, color: COLORS.AI, group: 'ai', link: '/blog?tag=開発' },
-            { id: 'ai-usage', name: isEn ? 'AI Usage' : 'AI活用術', val: 10, color: COLORS.AI, group: 'ai', link: '/blog?tag=AI活用' },
-            { id: 'posture-tech', name: isEn ? 'Posture Estimation' : '姿勢推定', val: 10, color: COLORS.AI, group: 'ai', link: '/blog?tag=姿勢推定' },
-            { id: 'ai-literacy', name: isEn ? 'AI Literacy' : 'AIリテラシー', val: 8, color: COLORS.AI, group: 'ai', link: '/blog?tag=AIリテラシー' },
+            { id: 'ai', name: isEn ? 'AI & Technology' : 'AI・テクノロジー', val: 18, color: COLORS.AI, group: 'ai', link: noteUrl },
+            { id: 'ai-dev', name: isEn ? 'Development' : '技術開発', val: 12, color: COLORS.AI, group: 'ai', link: noteUrl },
+            { id: 'ai-usage', name: isEn ? 'AI Usage' : 'AI活用術', val: 10, color: COLORS.AI, group: 'ai', link: noteUrl },
+            { id: 'posture-tech', name: isEn ? 'Posture Estimation' : '姿勢推定', val: 10, color: COLORS.AI, group: 'ai', link: noteUrl },
+            { id: 'ai-literacy', name: isEn ? 'AI Literacy' : 'AIリテラシー', val: 8, color: COLORS.AI, group: 'ai', link: noteUrl },
 
             // Physio & Health
-            { id: 'physio', name: isEn ? 'Physio & Health' : '理学療法・健康', val: 18, color: COLORS.PHYSIO, group: 'physio', link: '/blog?category=理学療法・健康' },
-            { id: 'gait-analysis', name: isEn ? 'Gait Analysis' : '歩行解析', val: 12, color: COLORS.PHYSIO, group: 'physio', link: '/blog?tag=歩行解析' },
-            { id: 'insole-tech', name: isEn ? 'Insole Tech' : 'インソール', val: 12, color: COLORS.PHYSIO, group: 'physio', link: '/blog?tag=インソール' },
-            { id: 'massage-therapy', name: isEn ? 'Massage' : 'マッサージ', val: 10, color: COLORS.PHYSIO, group: 'physio', link: '/blog?tag=マッサージ' },
-            { id: 'education', name: isEn ? 'Therapist Education' : 'セラピスト教育', val: 10, color: COLORS.PHYSIO, group: 'physio', link: '/blog?tag=教育' },
+            { id: 'physio', name: isEn ? 'Physio & Health' : '理学療法・健康', val: 18, color: COLORS.PHYSIO, group: 'physio', link: noteUrl },
+            { id: 'gait-analysis', name: isEn ? 'Gait Analysis' : '歩行解析', val: 12, color: COLORS.PHYSIO, group: 'physio', link: noteUrl },
+            { id: 'insole-tech', name: isEn ? 'Insole Tech' : 'インソール', val: 12, color: COLORS.PHYSIO, group: 'physio', link: noteUrl },
+            { id: 'massage-therapy', name: isEn ? 'Massage' : 'マッサージ', val: 10, color: COLORS.PHYSIO, group: 'physio', link: noteUrl },
+            { id: 'education', name: isEn ? 'Therapist Education' : 'セラピスト教育', val: 10, color: COLORS.PHYSIO, group: 'physio', link: noteUrl },
 
             // Business
-            { id: 'business', name: isEn ? 'Business' : 'ビジネス・起業', val: 15, color: COLORS.BUSINESS, group: 'business', link: '/blog?category=ビジネス・起業' },
-            { id: 'entrepreneurship', name: isEn ? 'Entrepreneurship' : '起業・経営', val: 10, color: COLORS.BUSINESS, group: 'business', link: '/blog?tag=起業' },
-            { id: 'consulting', name: isEn ? 'Consulting' : 'コンサルティング', val: 10, color: COLORS.BUSINESS, group: 'business', link: '/blog?tag=コンサル' },
-            { id: 'marketing', name: isEn ? 'Marketing' : 'マーケティング', val: 8, color: COLORS.BUSINESS, group: 'business', link: '/blog?tag=マーケティング' },
+            { id: 'business', name: isEn ? 'Business' : 'ビジネス・起業', val: 15, color: COLORS.BUSINESS, group: 'business', link: noteUrl },
+            { id: 'entrepreneurship', name: isEn ? 'Entrepreneurship' : '起業・経営', val: 10, color: COLORS.BUSINESS, group: 'business', link: noteUrl },
+            { id: 'consulting', name: isEn ? 'Consulting' : 'コンサルティング', val: 10, color: COLORS.BUSINESS, group: 'business', link: noteUrl },
+            { id: 'marketing', name: isEn ? 'Marketing' : 'マーケティング', val: 8, color: COLORS.BUSINESS, group: 'business', link: noteUrl },
 
             // Lifestyle
-            { id: 'lifestyle', name: isEn ? 'Mindset & Life' : 'マインドセット・生活', val: 15, color: COLORS.LIFE, group: 'life', link: '/blog?category=マインドセット・生活' },
-            { id: 'australia', name: isEn ? 'Life in Australia' : '海外生活', val: 10, color: COLORS.LIFE, group: 'life', link: '/blog?tag=オーストラリア生活' },
-            { id: 'nature', name: isEn ? 'Nature & Outdoor' : '自然・アウトドア', val: 8, color: COLORS.LIFE, group: 'life', link: '/blog?tag=アウトドア' },
-            { id: 'mindset', name: isEn ? 'Mindset' : 'マインドセット', val: 10, color: COLORS.LIFE, group: 'life', link: '/blog?tag=マインドセット' },
+            { id: 'lifestyle', name: isEn ? 'Mindset & Life' : 'マインドセット・生活', val: 15, color: COLORS.LIFE, group: 'life', link: noteUrl },
+            { id: 'australia', name: isEn ? 'Life in Australia' : '海外生活', val: 10, color: COLORS.LIFE, group: 'life', link: noteUrl },
+            { id: 'nature', name: isEn ? 'Nature & Outdoor' : '自然・アウトドア', val: 8, color: COLORS.LIFE, group: 'life', link: noteUrl },
+            { id: 'mindset', name: isEn ? 'Mindset' : 'マインドセット', val: 10, color: COLORS.LIFE, group: 'life', link: noteUrl },
         ],
         links: [
             { source: 'masa', target: 'ai' },

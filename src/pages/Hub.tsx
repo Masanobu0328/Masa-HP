@@ -47,11 +47,11 @@ const Hub: React.FC = () => {
     // ビジネス・サービスリンク
     const businessLinks = [
         {
-            title: trans.projects.blog.title,
+            title: "Note (Blog)",
             subtitle: trans.projects.blog.subtitle,
             icon: <BookOpen size={20} strokeWidth={1.5} />,
-            internal: true,
-            url: "/blog",
+            internal: false,
+            url: "https://note.com/masa_aus_physio",
             description: trans.projects.blog.description
         },
         {
@@ -464,42 +464,6 @@ const Hub: React.FC = () => {
                                     </a>
                                 )}
 
-                                {/* Blogカテゴリナビ */}
-                                {link.title === trans.projects.blog.title && (
-                                    <div style={{
-                                        display: 'grid',
-                                        gridTemplateColumns: 'repeat(2, 1fr)',
-                                        gap: 'var(--space-2)',
-                                        marginLeft: 'calc(48px + var(--space-5))',
-                                        marginBottom: 'var(--space-4)',
-                                        marginTop: 'calc(-1 * var(--space-2))'
-                                    }}>
-                                        {categories.map((cat, catIndex) => (
-                                            <Link
-                                                key={catIndex}
-                                                to={`/blog?category=${cat.slug}`}
-                                                className="category-link-mini"
-                                                style={{
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    gap: 'var(--space-2)',
-                                                    padding: 'var(--space-2) var(--space-3)',
-                                                    background: 'var(--color-surface-alt)',
-                                                    border: '1px solid var(--color-border-light)',
-                                                    borderRadius: 'var(--radius-md)',
-                                                    color: 'var(--color-text-tertiary)',
-                                                    fontSize: 'var(--text-xs)',
-                                                    fontWeight: 500,
-                                                    transition: 'all var(--transition-base)',
-                                                    textDecoration: 'none'
-                                                }}
-                                            >
-                                                <span style={{ color: 'var(--color-accent)', display: 'flex' }}>{cat.icon}</span>
-                                                <span>{cat.name}</span>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
                             </React.Fragment>
                         ))}
                     </nav>
@@ -514,7 +478,7 @@ const Hub: React.FC = () => {
                 </footer>
 
                 <div className="guide-line" aria-hidden="true"></div>
-            </div>
+            </div >
         </>
     );
 };

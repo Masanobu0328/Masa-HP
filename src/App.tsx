@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Hub from './pages/Hub';
-import Blog from './pages/Blog';
-
-import BlogPost from './pages/BlogPost';
+// Blog pages kept as backup - not publicly accessible
+// import Blog from './pages/Blog';
+// import BlogPost from './pages/BlogPost';
 
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -23,8 +23,9 @@ const App: React.FC = () => {
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Hub />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/:id" element={<BlogPost />} />
+                    {/* Blog routes kept as backup - not publicly accessible */}
+                    {/* <Route path="/blog" element={<Blog />} /> */}
+                    {/* <Route path="/blog/:id" element={<BlogPost />} /> */}
                 </Routes>
             </Router>
         </LanguageProvider>
