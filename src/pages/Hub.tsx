@@ -55,22 +55,6 @@ const Hub: React.FC = () => {
             description: trans.projects.blog.description
         },
         {
-            title: trans.projects.takumi.title,
-            subtitle: trans.projects.takumi.subtitle,
-            icon: <Activity size={20} strokeWidth={1.5} />,
-            internal: false,
-            url: "https://takumiwalk.example.com",
-            description: trans.projects.takumi.description
-        },
-        {
-            title: trans.projects.physio.title,
-            subtitle: trans.projects.physio.subtitle,
-            icon: <Lightbulb size={20} strokeWidth={1.5} />,
-            internal: false,
-            url: "https://physiogolazo.example.com",
-            description: trans.projects.physio.description
-        },
-        {
             title: trans.projects.contact.title,
             subtitle: trans.projects.contact.subtitle,
             icon: <MessageSquare size={20} strokeWidth={1.5} />,
