@@ -285,19 +285,46 @@ const Hub: React.FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="link-card"
-                            style={{ background: 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-accent-bg) 100%)' }}
+                            style={{
+                                background: 'transparent',
+                                position: 'relative',
+                                overflow: 'hidden'
+                            }}
                         >
-                            <div className="link-card-inner">
-                                <div className="link-card-icon">
+                            {/* Background Image with Overlay */}
+                            <div style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                backgroundImage: 'url(/フッダー.jpg)',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                zIndex: 0
+                            }} />
+                            {/* Gradient Overlay for text readability */}
+                            <div style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                background: 'linear-gradient(135deg, rgba(92, 107, 97, 0.92) 0%, rgba(124, 144, 130, 0.88) 100%)',
+                                zIndex: 1
+                            }} />
+
+                            <div className="link-card-inner" style={{ position: 'relative', zIndex: 2 }}>
+                                <div className="link-card-icon" style={{ color: 'white' }}>
                                     <Globe size={20} strokeWidth={1.5} />
                                 </div>
                                 <div className="link-card-content">
                                     <div className="link-card-header">
-                                        <h3 className="link-card-title">{store.name}</h3>
-                                        <ArrowRight size={16} className="link-card-arrow" aria-hidden="true" />
+                                        <h3 className="link-card-title" style={{ color: 'white' }}>{store.name}</h3>
+                                        <ArrowRight size={16} className="link-card-arrow" aria-hidden="true" style={{ color: 'white' }} />
                                     </div>
-                                    <p className="link-card-subtitle">{store.type} — {store.location}</p>
-                                    <p className="link-card-description">{store.description}</p>
+                                    <p className="link-card-subtitle" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{store.type} — {store.location}</p>
+                                    <p className="link-card-description" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>{store.description}</p>
                                 </div>
                             </div>
                         </a>
