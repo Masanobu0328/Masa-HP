@@ -148,14 +148,14 @@ const translations = {
     // Values
     values_label: 'Our Values',
     values_title: 'What We Value',
-    values_subtitle: 'Every detail matters — from the first consultation to the final style.',
+    values_subtitle: 'We prioritize a calm environment and meticulous care for every client.',
 
     values_1_title: 'Precision Technique',
     values_1_desc: 'Japanese cutting techniques refined through years of training. We pay attention to every strand.',
     values_2_title: 'Personal Consultation',
     values_2_desc: 'We take the time to understand your hair, lifestyle, and goals before picking up the scissors.',
     values_3_title: 'Relaxing Space',
-    values_3_desc: 'A calm, private atmosphere where you can unwind and enjoy your salon experience.',
+    values_3_desc: 'A calm, private atmosphere where you can unwind and enjoy personalized, meticulous service.',
 
     // Menu
     menu_label: 'Services',
@@ -205,7 +205,7 @@ const translations = {
     booking_title: 'Book an Appointment',
     booking_subtitle: 'Reserve your spot online — quick and easy.',
     booking_placeholder: 'Online booking coming soon. In the meantime, please reach out via Instagram DM or phone to make a reservation.',
-    booking_policy: 'Cancellation Policy: Free cancellation up to 24 hours before your appointment.',
+    booking_policy: 'Cancellation Policy:\n- Until 1 day before: Free\n- Same-day: 100% of service fee\n- Rescheduling: Please contact us as early as possible.',
 
     // Access
     access_label: 'Find Us',
@@ -213,8 +213,18 @@ const translations = {
     access_address_title: 'Address',
     access_address: '40 Cooleroo Cres, Southport QLD 4215',
     access_hours_title: 'Business Hours',
+    access_hours_daily: '9:00 AM – 6:00 PM',
+    access_hours_mon: 'Mon',
+    access_hours_tue: 'Tue',
+    access_hours_wed: 'Wed',
+    access_hours_thu: 'Thu',
+    access_hours_fri: 'Fri',
+    access_hours_sat: 'Sat',
+    access_hours_sun: 'Sun',
     access_parking_title: 'Parking',
-    access_parking_desc: 'Details coming soon.',
+    access_parking_desc: 'Please use the available street parking near the salon.',
+    access_payment_title: 'Payment',
+    access_payment_desc: 'Cash Only',
     access_hours_closed: 'Closed',
 
     // Footer
@@ -240,14 +250,14 @@ const translations = {
     // Values
     values_label: '私たちのこだわり',
     values_title: '大切にしていること',
-    values_subtitle: 'カウンセリングから仕上げまで、一つひとつ丁寧に向き合います。',
+    values_subtitle: 'お客様お一人おひとりと丁寧に向き合い、落ち着いた空間で特別なひとときを提供します。',
 
     values_1_title: '繊細なカット技術',
     values_1_desc: '日本で培った確かな技術で、一本一本の毛流れまで丁寧にカットします。',
     values_2_title: '丁寧なカウンセリング',
     values_2_desc: '髪質やライフスタイルをしっかり伺い、あなたに最適なスタイルをご提案します。',
     values_3_title: 'リラックスできる空間',
-    values_3_desc: '落ち着いたプライベートな空間で、ゆったりとした時間をお過ごしください。',
+    values_3_desc: '落ち着いたプライベートな空間で、一人ひとりに合わせた丁寧な施術を大切にしています。',
 
     // Menu
     menu_label: 'サービス',
@@ -297,7 +307,7 @@ const translations = {
     booking_title: 'ご予約はこちら',
     booking_subtitle: 'オンラインで簡単にご予約いただけます。',
     booking_placeholder: 'オンライン予約は準備中です。お手数ですが、InstagramのDMまたはお電話にてご予約ください。',
-    booking_policy: 'キャンセルポリシー：ご予約の24時間前まで無料キャンセル可能です。',
+    booking_policy: 'キャンセルポリシー：\n・前日までのキャンセル・変更：無料\n・当日キャンセル：施術代金の100%\n・日程変更：お早めにご相談ください',
 
     // Access
     access_label: 'アクセス',
@@ -305,13 +315,24 @@ const translations = {
     access_address_title: '住所',
     access_address: '40 Cooleroo Cres, Southport QLD 4215',
     access_hours_title: '営業時間',
+    access_hours_daily: '9:00 〜 18:00',
+    access_hours_mon: '月',
+    access_hours_tue: '火',
+    access_hours_wed: '水',
+    access_hours_thu: '木',
+    access_hours_fri: '金',
+    access_hours_sat: '土',
+    access_hours_sun: '日',
     access_parking_title: '駐車場',
-    access_parking_desc: '詳細は近日公開予定です。',
+    access_parking_desc: 'お近くの路上駐車スペースをご利用ください。',
+    access_payment_title: 'お支払い方法',
+    access_payment_desc: '現金のみ',
     access_hours_closed: '定休日',
 
     // Footer
     footer_copyright: "© 2026 Ayaka's Hair. All rights reserved.",
   }
+
 };
 
 function initI18n() {

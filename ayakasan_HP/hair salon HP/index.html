@@ -375,8 +375,13 @@
         </div>
       </div>
 
-      <p class="booking-policy reveal" data-i18n="booking_policy">Cancellation Policy: Free cancellation up to 24 hours
-        before your appointment.</p>
+      <details class="booking-policy-details reveal">
+        <summary data-i18n="booking_label">Cancellation Policy</summary>
+        <p class="booking-policy" data-i18n="booking_policy">Cancellation Policy:
+- Until 1 day before: Free
+- Same-day: 100% charge
+- Rescheduling: Please contact us as early as possible.</p>
+      </details>
     </div>
   </section>
 
@@ -425,14 +430,28 @@
               <h3 data-i18n="access_hours_title">Business Hours</h3>
             </div>
             <ul class="hours-list">
-              <li><span>Mon</span><span>—</span></li>
-              <li><span>Tue</span><span>—</span></li>
-              <li><span>Wed</span><span>—</span></li>
-              <li><span>Thu</span><span>—</span></li>
-              <li><span>Fri</span><span>—</span></li>
-              <li><span>Sat</span><span>—</span></li>
-              <li><span>Sun</span><span data-i18n="access_hours_closed">Closed</span></li>
+              <li><span data-i18n="access_hours_mon">Mon</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_tue">Tue</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_wed">Wed</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_thu">Thu</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_fri">Fri</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_sat">Sat</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
+              <li><span data-i18n="access_hours_sun">Sun</span><span data-i18n="access_hours_daily">9:00 AM – 6:00 PM</span></li>
             </ul>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-header">
+              <div class="info-block-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <h3 data-i18n="access_payment_title">Payment</h3>
+            </div>
+            <p data-i18n="access_payment_desc">Cash Only</p>
           </div>
 
           <div class="info-block">
@@ -446,7 +465,7 @@
               </div>
               <h3 data-i18n="access_parking_title">Parking</h3>
             </div>
-            <p data-i18n="access_parking_desc">Details coming soon.</p>
+            <p data-i18n="access_parking_desc">Please use the available street parking near the salon.</p>
           </div>
         </div>
       </div>

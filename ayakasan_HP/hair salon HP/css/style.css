@@ -851,11 +851,36 @@ section {
 }
 
 .booking-policy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.booking-policy-details {
   position: relative;
   z-index: 1;
   margin-top: 2rem;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.booking-policy-details summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--color-accent-light);
+  list-style: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.booking-policy-details summary::-webkit-details-marker {
+  display: none;
 }
 
 /* ================================================
